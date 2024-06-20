@@ -36,7 +36,6 @@ For tracking and selecting the Starlink satellites, we utilized the [satellitema
 </p>
 
 #### Starlink Internet Coverage Simulation
-![Starlink Simulation]()
 <div align="center">
    <img src="https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/raw/main/Starlink%20Irbid/Starlink%20Simulation.png" alt="Starlink Simulation">
   <p><strong>Low Quality GIF</strong></p>

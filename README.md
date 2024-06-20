@@ -15,10 +15,16 @@ In this project, we simulate the potential use of Molniya orbit satellites for s
 </p>
 
 #### Molniya Orbit Satellite Simulation
-<video width="600" controls>
-  <source src="See America/Molniya Simulation.mp4">
-  Your browser does not support the video tag.
-</video>
+
+<div align="center">
+   <img src="https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/raw/main/See%20America/Molniya%20Simulation.png" alt="Molniya Simulation">
+  <p><strong>Low Quality GIF</strong></p>
+  <img src="https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/raw/main/See%20America/GIF.gif" alt="Molniya GIF" width="600">
+</div>
+
+<p align="justify">
+To see what actually happens more clearly, please download the simulation files and run them locally. High quality videos/GIFs are too large to be rendered and displayed quickly if at all on GitHub.
+</p>
 
 ### Starlink Internet Coverage in Irbid
 <p align="justify">
@@ -29,21 +35,27 @@ The primary focus of this project is the implementation of a Starlink satellite 
 For tracking and selecting the Starlink satellites, we utilized the [satellitemap](https://satellitemap.space) website, an invaluable tool that provides real-time positions of Starlink satellites. This tool helped in picking 10 Starlink satellites within the same orbital plane, checking their next passes over Jordan, and evaluating their performance for internet coverage in Irbid.
 </p>
 
+#### Starlink Internet Coverage Simulation
+![Starlink Simulation]()
+<div align="center">
+   <img src="https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/raw/main/Starlink%20Irbid/Starlink%20Simulation.png" alt="Starlink Simulation">
+  <p><strong>Low Quality GIF</strong></p>
+  <img src="https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/raw/main/Starlink%20Irbid/GIF.gif" alt="Starlink GIF">
+</div>
 
-## Starlink Internet Coverage in Irbid
-<video width="600" controls>
-  <source src="path-to-your-starlink-video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<p align="justify">
+Note the same as in Molniya for rendering the actual video/GIF of the simulation.
+</p>
 
 ## Further Details
 <p align="justify">
-For a comprehensive understanding of the methodologies and findings, please refer to the detailed [report](https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/report) included in this repository. Additionally, all simulation files are available for review and further experimentation.
+For a comprehensive understanding of the methodologies and findings, please refer to the detailed [report](https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/raw/main/Starlink%20Irbid/Report.pdf) included in this repository. The report was initially created to supplement a comprehensive presentation of the simulation to the course instructor. While it provides an overview of the general methodology, design, and performance, it does not encompass every detail. The primary objective of this report was to meet the formal submission requirements, and it can be easily improved for a more stringent objective.
 </p>
 
+
 ### Repository Contents
-- **Report:** In-depth analysis and results.
-- **Simulations:** STK and other related simulation files.
+- **Report:** Design, analysis and results.
+- **Simulations:** STK.
 - **GIFs:** Visual representations of key simulations.
 
 <p align="justify">

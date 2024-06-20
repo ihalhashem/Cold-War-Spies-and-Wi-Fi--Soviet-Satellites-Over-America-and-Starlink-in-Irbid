@@ -16,7 +16,7 @@ In this project, we simulate the potential use of Molniya orbit satellites for s
 
 #### Molniya Orbit Satellite Simulation
 <video width="600" controls>
-  <source src="https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/blob/main/See%20America/Molniya%20Simulation.mp4" type="video/mp4">
+  <source src="See America/Molniya Simulation.mp4">
   Your browser does not support the video tag.
 </video>
 

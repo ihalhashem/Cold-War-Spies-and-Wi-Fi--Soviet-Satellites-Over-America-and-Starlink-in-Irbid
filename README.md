@@ -48,9 +48,8 @@ Note the same as in Molniya for rendering the actual video/GIF of the simulation
 
 ## Further Details
 <p align="justify">
-For a comprehensive understanding of the methodologies and findings, please refer to the detailed [report](https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/raw/main/Starlink%20Irbid/Report.pdf) included in this repository. The report was initially created to supplement a comprehensive presentation of the simulation to the course instructor. While it provides an overview of the general methodology, design, and performance, it does not encompass every detail. The primary objective of this report was to meet the formal submission requirements, and it can be easily improved for a more stringent objective.
+For a comprehensive understanding of the methodologies and findings, please refer to the detailed [report](https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/blob/main/Starlink%20Irbid/Report.pdf) included in this repository. The report was initially created to supplement a comprehensive presentation of the simulation to the course instructor. While it provides an overview of the general methodology, design, and performance, it does not encompass every detail. The primary objective of this report was to meet the formal submission requirements, and it can be easily improved for a more stringent objective.
 </p>
-
 
 ### Repository Contents
 - **Report:** Design, analysis and results.

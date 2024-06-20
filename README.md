@@ -15,7 +15,11 @@ In this project, we simulate the potential use of Molniya orbit satellites for s
 </p>
 
 #### Molniya Orbit Satellite Simulation
-![Molniya Simulation](temp)
+<video width="600" controls>
+  <source src="See America/Molniya Simulation.mp4">
+  Your browser does not support the video tag.
+</video>
+
 ### Starlink Internet Coverage in Irbid
 <p align="justify">
 The primary focus of this project is the implementation of a Starlink satellite network to provide internet coverage in Irbid, Jordan. Starlink, developed by SpaceX, aims to deliver high-speed internet across the globe using a constellation of low Earth orbit (LEO) satellites. This part of the project involves designing, simulating, and evaluating the performance of the Starlink network in providing reliable internet access, including performance metrics such as Bit Error Rate (BER), Signal-to-Noise Ratio (SNR), and interference management.
@@ -26,19 +30,21 @@ For tracking and selecting the Starlink satellites, we utilized the [satellitema
 </p>
 
 
-#### Starlink Internet Coverage in Irbid
-![Starlink Irbid](temp)
+## Starlink Internet Coverage in Irbid
+<video width="600" controls>
+  <source src="path-to-your-starlink-video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Further Details
 <p align="justify">
 For a comprehensive understanding of the methodologies and findings, please refer to the detailed [report](https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/report) included in this repository. Additionally, all simulation files are available for review and further experimentation.
 </p>
 
-
 ### Repository Contents
 - **Report:** In-depth analysis and results.
-- **Simulations:** STK.
-- **GIFs:** Visual representations of the project.
+- **Simulations:** STK and other related simulation files.
+- **GIFs:** Visual representations of key simulations.
 
 <p align="justify">
 Feel free to explore the files and reach out if you have any questions or need further information.

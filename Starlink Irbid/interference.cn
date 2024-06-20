@@ -1,0 +1,39 @@
+stk.v.11.0
+WrittenBy    STK_v11.2.0
+
+BEGIN Constellation
+
+Name  interference
+BEGIN Definition
+
+   Type        Constellation
+   Operator    Or
+   Order       1
+   ToParentConstraint    AnyParent
+   FromParentConstraint  AnyParent
+    Object  Satellite/STARLINK-1393/Sensor/IN1/Transmitter/INTX1
+    Object  Satellite/STARLINK-1394/Sensor/IN2/Transmitter/INTX2
+    Object  Satellite/STARLINK-1399/Sensor/IN3/Transmitter/INTX3
+    Object  Satellite/STARLINK-1402/Sensor/IN4/Transmitter/INTX4
+    Object  Satellite/STARLINK-1404/Sensor/IN5/Transmitter/INTX5
+    Object  Satellite/STARLINK-1413/Sensor/IN6/Transmitter/INTX6
+    Object  Satellite/STARLINK-1414/Sensor/IN7/Transmitter/INTX7
+    Object  Satellite/STARLINK-1417/Sensor/IN8/Transmitter/INTX8
+    Object  Satellite/STARLINK-1419/Sensor/IN9/Transmitter/INTX9
+    Object  Satellite/STARLINK-1422/Sensor/IN10/Transmitter/INTX10
+   SaveMode    0
+   UseLoadIntervalFile    No
+
+END Definition
+
+BEGIN Extensions
+    
+    BEGIN ADFFileData
+    END ADFFileData
+    
+    BEGIN Desc
+    END Desc
+
+END Extensions
+
+END Constellation

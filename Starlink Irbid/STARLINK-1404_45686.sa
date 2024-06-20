@@ -1,0 +1,19 @@
+STK.V.9.0
+WrittenBy    AGI.Framework
+BEGIN Satellite
+	Name		STARLINK-1404_45686
+BEGIN VehiclePath
+	CentralBody				Earth
+	BEGIN SGP4
+		VersionIndicator    20080918
+		SSCNumber           45686
+		IntlDesignator      2020-035AF
+		CommonName          STARLINK-1404
+		TimeStep    60.0
+	END SGP4
+END VehiclePath
+BEGIN Extensions
+	BEGIN Desc
+	END Desc
+END Extensions
+END Satellite

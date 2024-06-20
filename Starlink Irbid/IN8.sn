@@ -1,0 +1,216 @@
+stk.v.11.0
+WrittenBy    STK_v11.2.0
+
+BEGIN Sensor
+
+    Name            IN8
+
+BEGIN Pattern
+
+    BEGIN SimpleCone
+
+        ConeAngle              5.000000000000e+00
+        AngularPatternResolution     4.000000000000e+00
+
+    END SimpleCone
+
+    DetailedTerrainHorizon     Yes
+
+
+END Pattern
+
+BEGIN Pointing
+
+    BEGIN Targeted
+
+    TargetMode              Tracking
+    Sequence                323
+    TrackingMode            Both
+    AberrationType           Annual
+    TimeDelayConvergence     5.000000e-05
+    MaxTimeStep              3.600000e+02
+    MinTimeStep              1.000000e-02
+    TimeConvergence          5.000000e-03
+    AbsValueConvergence      1.000000e-14
+    RelValueConvergence      1.000000e-08
+    DetectEventsUsingSamplesOnly No
+
+    BEGIN AssignedTargets
+
+    Facility/Facility1
+
+    END AssignedTargets
+
+    BEGIN TargetInviews
+
+    Facility/Facility1  2022-01-05T18:20:36.496444783  2022-01-05T18:27:34.710399806
+    Facility/Facility1  2022-01-05T19:56:35.051362316  2022-01-05T20:09:09.995540411
+    Facility/Facility1  2022-01-05T21:37:02.726230067  2022-01-05T21:48:18.871272303
+    Facility/Facility1  2022-01-05T23:20:09.153808156  2022-01-05T23:27:19.040205982
+    Facility/Facility1  2022-01-06T01:02:09.608116060  2022-01-06T01:08:51.582024696
+    Facility/Facility1  2022-01-06T02:41:17.066168267  2022-01-06T02:52:07.802366338
+    Facility/Facility1  2022-01-06T04:20:19.818637958  2022-01-06T04:32:59.756890871
+    Facility/Facility1  2022-01-06T06:01:16.677512215  2022-01-06T06:09:49.735134445
+
+    END TargetInviews
+
+    SaveTargetAccesses Yes
+
+    UseTargetSchedule  No
+
+    Begin Stable
+        Use          No
+        Mode         NorthStable
+    End Stable
+    AdjustPointingToTargetsDuringAccessToTargets   No
+    UseTrackControl            No
+
+    END Targeted
+
+END Pointing
+
+BEGIN Optics
+
+    FocalLength             1.000000000000e+02
+    DetectorPitch           1.000000000000e-03
+    IQConstant              0.000000000000e+00
+    GsdCoefficient          0.000000000000e+00
+
+END Optics
+
+BEGIN Extensions
+    
+    BEGIN ExternData
+    END ExternData
+    
+    BEGIN ADFFileData
+    END ADFFileData
+    
+    BEGIN AccessConstraints
+		AtFieldOfView   IncludeIntervals 
+		FieldOfView   IncludeIntervals 
+		LineOfSight   IncludeIntervals 
+    END AccessConstraints
+    
+    BEGIN ObjectCoverage
+    END ObjectCoverage
+    
+    BEGIN Desc
+    END Desc
+    
+    BEGIN Refraction
+		RefractionModel	Effective Radius Method
+
+		UseRefractionInAccess		No
+
+		BEGIN ModelData
+			RefractionCeiling	5.00000000000000e+03
+			MaxTargetAltitude	1.00000000000000e+04
+			EffectiveRadius		1.33333333333333e+00
+
+			UseExtrapolation	 Yes
+
+
+		END ModelData
+    END Refraction
+    
+    BEGIN Crdn
+    END Crdn
+    
+    BEGIN Graphics
+
+		BEGIN Attributes
+
+			Inherit             Yes
+			Show                Yes
+			LineStyle           0
+			LineWidth           1.000000
+			PatternColor        #ff00ff
+
+		END Attributes
+
+		BEGIN Display
+
+			NumberOfPatterns        1
+			PersistenceDuration     0.000000000000e+00
+			PersistenceIgnoreDefChg No
+			UpdatesDefnOften        No
+			MinDisplayAltitude      0.000000000000e+00
+			MaxDisplayAltitude      1.000000000000e+07
+			AltitudeIntersectSense           Either
+			ShowBothAltCrossings           No
+			IntersectType           CentralBody
+			ShowGround          Yes
+			UseProjectionRadii          No
+			ExcludeHorizonArcs           No
+			ForwardPersist          No
+			FillPersist             No
+			DsplyTmHidesPersist     No
+			SpaceLength             5.000000000000e+07
+			TgtExtLength            0.000000000000e+00
+			FOVHalfAngle            No
+			HalfAngle               0.000000000000e+00
+			ProjDisplay             Sphere
+			DisplayType             ConstantRadius
+			DisplayFOVWithConstraints           No
+			ShowBoresight           No
+			BoresightMarker         4
+			BoresightColor          #ffffff
+			ShowFill                No
+			FillTranslucency        0.500000
+			ShowOn2DMap             Yes
+
+		END Display
+
+		BEGIN    Swath
+
+			MaxStep            6.000000000000e+01
+			MinStep            1.000000000000e-01
+			CloseSwath    Yes
+			Tolerance          4.000000000000e+00
+			MatchTolerance     9.000000000000e+01
+			ShowSwath    No
+			ComputationalMethod    Numerical
+			Color        #f0ffff
+			LineStyle    0
+			LineWidth    1.000000
+    SwathIntervalPtr
+	BEGIN	EVENTINTERVAL
+			BEGIN Interval
+				Start	5 Jan 2022 10:00:00.000000000
+				Stop	6 Jan 2022 10:00:00.000000000
+			END Interval
+			IntervalState	Explicit
+	END	EVENTINTERVAL
+
+
+		END    Swath
+
+        BEGIN DisplayTimes
+            DisplayType	AlwaysOn
+        END DisplayTimes
+    END Graphics
+    
+    BEGIN Swath
+    END Swath
+    
+    BEGIN VO
+    END VO
+    
+    BEGIN DIS
+    END DIS
+
+END Extensions
+
+BEGIN SubObjects
+
+Class Transmitter
+
+	INTX8
+
+END Class
+
+END SubObjects
+
+END Sensor
+

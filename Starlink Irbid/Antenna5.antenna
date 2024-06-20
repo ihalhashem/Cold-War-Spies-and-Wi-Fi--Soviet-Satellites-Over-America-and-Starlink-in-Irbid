@@ -1,0 +1,257 @@
+stk.v.11.0
+WrittenBy    STK_v11.2.0
+
+BEGIN	Antenna
+
+Name	Antenna5
+<?xml version = "1.0" standalone = "yes"?>
+<VAR name = "STK_Antenna_Object">
+    <SCOPE Class = "CommRadarObject">
+        <VAR name = "Version">
+            <STRING>&quot;1.0.0 a&quot;</STRING>
+        </VAR>
+        <VAR name = "ComponentName">
+            <STRING>&quot;STK_Antenna_Object&quot;</STRING>
+        </VAR>
+        <VAR name = "Description">
+            <STRING>&quot;STK Antenna Object&quot;</STRING>
+        </VAR>
+        <VAR name = "Type">
+            <STRING>&quot;STK Antenna Object&quot;</STRING>
+        </VAR>
+        <VAR name = "UserComment">
+            <STRING>&quot;STK Antenna Object&quot;</STRING>
+        </VAR>
+        <VAR name = "ReadOnly">
+            <BOOL>false</BOOL>
+        </VAR>
+        <VAR name = "Clonable">
+            <BOOL>true</BOOL>
+        </VAR>
+        <VAR name = "Category">
+            <STRING>&quot;&quot;</STRING>
+        </VAR>
+        <VAR name = "Model">
+            <VAR name = "Gaussian">
+                <SCOPE Class = "Antenna">
+                    <VAR name = "Version">
+                        <STRING>&quot;1.0.0 a&quot;</STRING>
+                    </VAR>
+                    <VAR name = "ComponentName">
+                        <STRING>&quot;Gaussian&quot;</STRING>
+                    </VAR>
+                    <VAR name = "Description">
+                        <STRING>&quot;Analytical model of a Gaussian beam similar to a parabolic antenna within about -6 dB relative to boresight&quot;</STRING>
+                    </VAR>
+                    <VAR name = "Type">
+                        <STRING>&quot;Gaussian&quot;</STRING>
+                    </VAR>
+                    <VAR name = "UserComment">
+                        <STRING>&quot;Analytical model of a Gaussian beam similar to a parabolic antenna within about -6 dB relative to boresight&quot;</STRING>
+                    </VAR>
+                    <VAR name = "ReadOnly">
+                        <BOOL>false</BOOL>
+                    </VAR>
+                    <VAR name = "Clonable">
+                        <BOOL>true</BOOL>
+                    </VAR>
+                    <VAR name = "Category">
+                        <STRING>&quot;&quot;</STRING>
+                    </VAR>
+                    <VAR name = "DesignFrequency">
+                        <QUANTITY Dimension = "FrequencyUnit" Unit = "Hz">
+                            <REAL>14500000000</REAL>
+                        </QUANTITY>
+                    </VAR>
+                    <VAR name = "InputType">
+                        <STRING>&quot;Use Diameter&quot;</STRING>
+                    </VAR>
+                    <VAR name = "Diameter">
+                        <QUANTITY Dimension = "SmallDistanceUnit" Unit = "m">
+                            <REAL>1</REAL>
+                        </QUANTITY>
+                    </VAR>
+                    <VAR name = "MainlobeGain">
+                        <QUANTITY Dimension = "RatioUnit" Unit = "units">
+                            <REAL>12698.63479991336</REAL>
+                        </QUANTITY>
+                    </VAR>
+                    <VAR name = "Beamwidth">
+                        <QUANTITY Dimension = "AngleUnit" Unit = "rad">
+                            <REAL>0.0278786253725679</REAL>
+                        </QUANTITY>
+                    </VAR>
+                    <VAR name = "BacklobeGain">
+                        <QUANTITY Dimension = "RatioUnit" Unit = "units">
+                            <REAL>0.001</REAL>
+                        </QUANTITY>
+                    </VAR>
+                    <VAR name = "UseAsMainlobeAttenuation">
+                        <BOOL>false</BOOL>
+                    </VAR>
+                    <VAR name = "Efficiency">
+                        <QUANTITY Dimension = "Percent" Unit = "unitValue">
+                            <REAL>0.55</REAL>
+                        </QUANTITY>
+                    </VAR>
+                </SCOPE>
+            </VAR>
+        </VAR>
+        <VAR name = "Orientation">
+            <VAR name = "Azimuth Elevation">
+                <SCOPE Class = "Orientation">
+                    <VAR name = "AzimuthAngle">
+                        <QUANTITY Dimension = "AngleUnit" Unit = "rad">
+                            <REAL>0</REAL>
+                        </QUANTITY>
+                    </VAR>
+                    <VAR name = "ElevationAngle">
+                        <QUANTITY Dimension = "AngleUnit" Unit = "rad">
+                            <REAL>1.570796326794897</REAL>
+                        </QUANTITY>
+                    </VAR>
+                    <VAR name = "AboutBoresight">
+                        <STRING>&quot;Rotate&quot;</STRING>
+                    </VAR>
+                    <VAR name = "Type">
+                        <STRING>&quot;Azimuth Elevation&quot;</STRING>
+                    </VAR>
+                    <VAR name = "XPositionOffset">
+                        <QUANTITY Dimension = "SmallDistanceUnit" Unit = "m">
+                            <REAL>0</REAL>
+                        </QUANTITY>
+                    </VAR>
+                    <VAR name = "YPositionOffset">
+                        <QUANTITY Dimension = "SmallDistanceUnit" Unit = "m">
+                            <REAL>0</REAL>
+                        </QUANTITY>
+                    </VAR>
+                    <VAR name = "ZPositionOffset">
+                        <QUANTITY Dimension = "SmallDistanceUnit" Unit = "m">
+                            <REAL>0</REAL>
+                        </QUANTITY>
+                    </VAR>
+                </SCOPE>
+            </VAR>
+        </VAR>
+    </SCOPE>
+</VAR>
+END	Antenna
+
+BEGIN Extensions
+    
+    BEGIN ExternData
+    END ExternData
+    
+    BEGIN ADFFileData
+    END ADFFileData
+    
+    BEGIN AccessConstraints
+		LineOfSight   IncludeIntervals 
+    END AccessConstraints
+    
+    BEGIN Desc
+    END Desc
+    
+    BEGIN Refraction
+		RefractionModel	Effective Radius Method
+
+		UseRefractionInAccess		No
+
+		BEGIN ModelData
+			RefractionCeiling	5.00000000000000e+03
+			MaxTargetAltitude	1.00000000000000e+04
+			EffectiveRadius		1.33333333333333e+00
+
+			UseExtrapolation	 Yes
+
+
+		END ModelData
+    END Refraction
+    
+    BEGIN Crdn
+    END Crdn
+    
+    BEGIN Graphics
+
+BEGIN Graphics
+
+	ShowGfx           On
+	Relative          On
+	ShowBoresight     Off
+	BoresightMarker   4
+	BoresightColor    #ffffff
+
+END Graphics
+    END Graphics
+    
+    BEGIN ContourGfx
+	ShowContours      Off
+    END ContourGfx
+    
+    BEGIN Contours
+	ActiveContourType Antenna Gain
+
+	BEGIN ContourSet Antenna Gain
+		Altitude          0.000000e+00
+		ShowAtAltitude    Off
+		Projected         On
+		Relative          On
+		ShowLabels        Off
+		LineWidth         1.000000
+		DecimalDigits     1
+		ColorRamp         On
+		ColorRampStartColor   #0000ff
+		ColorRampEndColor     #ff0000
+		BEGIN ContourDefinition
+		BEGIN CntrAntAzEl
+			BEGIN AzElPattern
+				BEGIN AzElPatternDef
+					SetResolutionTogether 0
+					CoordinateSystem 0
+					NumAzPoints      181
+					AzimuthRes       2.000000
+					MinAzimuth       -180.000000
+					MaxAzimuth       180.000000
+					NumElPoints      91
+					ElevationRes     1.000000
+					MinElevation     0.000000
+					MaxElevation     90.000000
+				END AzElPatternDef
+			END AzElPattern
+		END CntrAntAzEl
+		END ContourDefinition
+	END ContourSet
+    END Contours
+    
+    BEGIN VO
+    END VO
+    
+    BEGIN 3dVolume
+        ActiveVolumeType  Antenna Beam
+
+        BEGIN VolumeSet Antenna Beam
+            Scale 4.000000
+            NumericGainOffset 1.000000
+            Frequency 14500000000.000000
+            ShowAsWireframe 0
+				BEGIN AzElPatternDef
+					SetResolutionTogether 0
+					CoordinateSystem 0
+					NumAzPoints      181
+					AzimuthRes       2.000000
+					MinAzimuth       -180.000000
+					MaxAzimuth       180.000000
+					NumElPoints      91
+					ElevationRes     1.000000
+					MinElevation     0.000000
+					MaxElevation     90.000000
+				END AzElPatternDef
+        END VolumeSet
+        BEGIN VolumeGraphics
+            ShowContours    No
+            ShowVolume No
+        END VolumeGraphics
+    END 3dVolume
+
+END Extensions

@@ -1,0 +1,30 @@
+stk.v.11.0
+WrittenBy    STK_v11.2.0
+
+BEGIN Constellation
+
+Name  RX
+BEGIN Definition
+
+   Type        Constellation
+   Operator    Or
+   Order       1
+   ToParentConstraint    AnyParent
+   FromParentConstraint  AnyParent
+    Object  Facility/MyHome/Receiver/DLRX
+   SaveMode    0
+   UseLoadIntervalFile    No
+
+END Definition
+
+BEGIN Extensions
+    
+    BEGIN ADFFileData
+    END ADFFileData
+    
+    BEGIN Desc
+    END Desc
+
+END Extensions
+
+END Constellation

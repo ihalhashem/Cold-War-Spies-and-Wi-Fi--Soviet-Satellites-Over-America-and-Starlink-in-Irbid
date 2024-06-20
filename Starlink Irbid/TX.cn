@@ -1,0 +1,54 @@
+stk.v.11.0
+WrittenBy    STK_v11.2.0
+
+BEGIN Constellation
+
+Name  TX
+BEGIN Definition
+
+   Type        Constellation
+   Operator    Or
+   Order       1
+   ToParentConstraint    AnyParent
+   FromParentConstraint  AnyParent
+    Object  Satellite/STARLINK-1393/Transmitter/DLTX1
+    Object  Satellite/STARLINK-1394/Transmitter/DLTX2
+    Object  Satellite/STARLINK-1399/Transmitter/DLTX3
+    Object  Satellite/STARLINK-1402/Transmitter/DLTX4
+    Object  Satellite/STARLINK-1404/Transmitter/DLTX5
+    Object  Satellite/STARLINK-1413/Transmitter/DLTX6
+    Object  Satellite/STARLINK-1414/Transmitter/DLTX7
+    Object  Satellite/STARLINK-1417/Transmitter/DLTX8
+    Object  Satellite/STARLINK-1419/Transmitter/DLTX9
+    Object  Satellite/STARLINK-1422/Transmitter/DLTX10
+    MatrixSize		10
+BEGIN Matrix
+
+122 0 0 0 0 0 0 0 0 0
+0 122 0 0 0 0 0 0 0 0
+0 0 122 0 0 0 0 0 0 0
+0 0 0 122 0 0 0 0 0 0
+0 0 0 0 122 0 0 0 0 0
+0 0 0 0 0 122 0 0 0 0
+0 0 0 0 0 0 122 0 0 0
+0 0 0 0 0 0 0 122 0 0
+0 0 0 0 0 0 0 0 122 0
+0 0 0 0 0 0 0 0 0 122
+END Matrix
+
+   SaveMode    0
+   UseLoadIntervalFile    No
+
+END Definition
+
+BEGIN Extensions
+    
+    BEGIN ADFFileData
+    END ADFFileData
+    
+    BEGIN Desc
+    END Desc
+
+END Extensions
+
+END Constellation

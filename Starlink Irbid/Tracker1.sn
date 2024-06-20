@@ -1,0 +1,1437 @@
+stk.v.11.0
+WrittenBy    STK_v11.2.0
+
+BEGIN Sensor
+
+    Name            Tracker1
+
+BEGIN Pattern
+
+    BEGIN SimpleCone
+
+        ConeAngle              5.000000000000e+00
+        AngularPatternResolution     4.000000000000e+00
+
+    END SimpleCone
+
+    DetailedTerrainHorizon     Yes
+
+
+END Pattern
+
+BEGIN Pointing
+
+    BEGIN Targeted
+
+    TargetMode              Tracking
+    Sequence                323
+    TrackingMode            Both
+    AberrationType           Annual
+    TimeDelayConvergence     5.000000e-05
+    MaxTimeStep              3.600000e+02
+    MinTimeStep              1.000000e-02
+    TimeConvergence          5.000000e-03
+    AbsValueConvergence      1.000000e-14
+    RelValueConvergence      1.000000e-08
+    DetectEventsUsingSamplesOnly No
+
+    BEGIN AssignedTargets
+
+    Facility/MyHome
+
+    END AssignedTargets
+
+    BEGIN TargetInviews
+
+    Facility/MyHome  2022-01-05T18:51:45.328858697  2022-01-05T19:02:04.024259376
+    Facility/MyHome  2022-01-05T20:29:40.926844310  2022-01-05T20:42:18.416913011
+    Facility/MyHome  2022-01-05T22:11:11.299699764  2022-01-05T22:21:14.028929726
+    Facility/MyHome  2022-01-05T23:54:33.769389528  2022-01-06T00:00:40.852969856
+    Facility/MyHome  2022-01-06T01:35:19.088235411  2022-01-06T01:43:22.370895410
+    Facility/MyHome  2022-01-06T03:14:12.518086678  2022-01-06T03:26:05.023612671
+    Facility/MyHome  2022-01-06T04:53:35.040782152  2022-01-06T05:05:49.931336003
+
+    END TargetInviews
+
+    SaveTargetAccesses Yes
+
+    UseTargetSchedule  No
+
+    Begin Stable
+        Use          No
+        Mode         NorthStable
+    End Stable
+    AdjustPointingToTargetsDuringAccessToTargets   No
+    UseTrackControl            No
+
+    END Targeted
+
+END Pointing
+
+BEGIN Optics
+
+    FocalLength             1.000000000000e+02
+    DetectorPitch           1.000000000000e-03
+    IQConstant              0.000000000000e+00
+    GsdCoefficient          0.000000000000e+00
+
+END Optics
+
+BEGIN Extensions
+    
+    BEGIN ExternData
+    END ExternData
+    
+    BEGIN ADFFileData
+    END ADFFileData
+    
+    BEGIN AccessConstraints
+		AtFieldOfView   IncludeIntervals 
+		FieldOfView   IncludeIntervals 
+		LineOfSight   IncludeIntervals 
+    END AccessConstraints
+    
+    BEGIN ObjectCoverage
+    END ObjectCoverage
+    
+    BEGIN Desc
+    END Desc
+    
+    BEGIN Refraction
+		RefractionModel	Effective Radius Method
+
+		UseRefractionInAccess		No
+
+		BEGIN ModelData
+			RefractionCeiling	5.00000000000000e+03
+			MaxTargetAltitude	1.00000000000000e+04
+			EffectiveRadius		1.33333333333333e+00
+
+			UseExtrapolation	 Yes
+
+
+		END ModelData
+    END Refraction
+    
+    BEGIN Crdn
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	MyHome
+			Description	Displacement vector to MyHome
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Facility/MyHome
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	MyHome-DLRX
+			Description	Displacement vector to MyHome-DLRX
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Facility/MyHome/Receiver/DLRX
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	MyHome-EA
+			Description	Displacement vector to MyHome-EA
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Facility/MyHome/Antenna/EA
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	MyHome-UPTX
+			Description	Displacement vector to MyHome-UPTX
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Facility/MyHome/Transmitter/UPTX
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1394
+			Description	Displacement vector to STARLINK-1394
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1394
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1394-DLTX2
+			Description	Displacement vector to STARLINK-1394-UPTX2
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1394/Transmitter/DLTX2
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1394-UPRX2
+			Description	Displacement vector to STARLINK-1394-DLRX2
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1394/Receiver/UPRX2
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1399
+			Description	Displacement vector to STARLINK-1399
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1399
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1399-DLTX3
+			Description	Displacement vector to STARLINK-1399-UPTX3
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1399/Transmitter/DLTX3
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1399-Tracker3
+			Description	Displacement vector to STARLINK-1399-Tracker3
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1399/Sensor/Tracker3
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1399-Tracker3-SA3
+			Description	Displacement vector to STARLINK-1399-Tracker3-SA3
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1399/Sensor/Tracker3/Antenna/SA3
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1399-UPRX3
+			Description	Displacement vector to STARLINK-1399-DLRX3
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1399/Receiver/UPRX3
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1402
+			Description	Displacement vector to STARLINK-1402
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1402
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1402-DLTX4
+			Description	Displacement vector to STARLINK-1402-UPTX4
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1402/Transmitter/DLTX4
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1402-Tracker4
+			Description	Displacement vector to STARLINK-1402-Tracker4
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1402/Sensor/Tracker4
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1402-Tracker4-SA4
+			Description	Displacement vector to STARLINK-1402-Tracker4-SA4
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1402/Sensor/Tracker4/Antenna/SA4
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1402-UPRX4
+			Description	Displacement vector to STARLINK-1402-DLRX4
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1402/Receiver/UPRX4
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1404
+			Description	Displacement vector to STARLINK-1404
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1404
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1404-DLTX5
+			Description	Displacement vector to STARLINK-1404-UPTX5
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1404/Transmitter/DLTX5
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1404-Tracker5
+			Description	Displacement vector to STARLINK-1404-Tracker5
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1404/Sensor/Tracker5
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1404-Tracker5-SA5
+			Description	Displacement vector to STARLINK-1404-Tracker5-SA5
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1404/Sensor/Tracker5/Antenna/SA5
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1404-UPRX5
+			Description	Displacement vector to STARLINK-1404-DLRX5
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1404/Receiver/UPRX5
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1413
+			Description	Displacement vector to STARLINK-1413
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1413
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1413-DLTX6
+			Description	Displacement vector to STARLINK-1413-UPTX6
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1413/Transmitter/DLTX6
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1413-Tracker6
+			Description	Displacement vector to STARLINK-1413-Tracker6
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1413/Sensor/Tracker6
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1413-Tracker6-SA6
+			Description	Displacement vector to STARLINK-1413-Tracker6-SA6
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1413/Sensor/Tracker6/Antenna/SA6
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1413-UPRX6
+			Description	Displacement vector to STARLINK-1413-DLRX6
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1413/Receiver/UPRX6
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1414
+			Description	Displacement vector to STARLINK-1414
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1414
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1414-DLTX7
+			Description	Displacement vector to STARLINK-1414-UPTX7
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1414/Transmitter/DLTX7
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1414-Tracker7
+			Description	Displacement vector to STARLINK-1414-Tracker7
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1414/Sensor/Tracker7
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1414-Tracker7-SA7
+			Description	Displacement vector to STARLINK-1414-Tracker7-SA7
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1414/Sensor/Tracker7/Antenna/SA7
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1414-UPRX7
+			Description	Displacement vector to STARLINK-1414-DLRX7
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1414/Receiver/UPRX7
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1417
+			Description	Displacement vector to STARLINK-1417
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1417
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1417-DLTX8
+			Description	Displacement vector to STARLINK-1417-UPTX8
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1417/Transmitter/DLTX8
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1417-Tracker8
+			Description	Displacement vector to STARLINK-1417-Tracker8
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1417/Sensor/Tracker8
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1417-Tracker8-SA8
+			Description	Displacement vector to STARLINK-1417-Tracker8-SA8
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1417/Sensor/Tracker8/Antenna/SA8
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1417-UPRX8
+			Description	Displacement vector to STARLINK-1417-DLRX8
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1417/Receiver/UPRX8
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1419
+			Description	Displacement vector to STARLINK-1419
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1419
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1419-DLTX9
+			Description	Displacement vector to STARLINK-1419-UPTX9
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1419/Transmitter/DLTX9
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1419-Tracker9
+			Description	Displacement vector to STARLINK-1419-Tracker9
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1419/Sensor/Tracker9
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1419-Tracker9-SA9
+			Description	Displacement vector to STARLINK-1419-Tracker9-SA9
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1419/Sensor/Tracker9/Antenna/SA9
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1419-UPRX9
+			Description	Displacement vector to STARLINK-1419-DLRX9
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1419/Receiver/UPRX9
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1422
+			Description	Displacement vector to STARLINK-1422
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1422
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1422-DLTX10
+			Description	Displacement vector to STARLINK-1422-UPTX10
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1422/Transmitter/DLTX10
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1422-Tracker10
+			Description	Displacement vector to STARLINK-1422-Tracker10
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1422/Sensor/Tracker10
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1422-Tracker10-SA10
+			Description	Displacement vector to STARLINK-1422-Tracker10-SA10
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1422/Sensor/Tracker10/Antenna/SA10
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+		BEGIN	VECTOR
+			Type	VECTOR_TOVECTOR
+			Name	STARLINK-1422-UPRX10
+			Description	Displacement vector to STARLINK-1422-DLRX10
+				Origin
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+					END	POINT
+				Destination
+					BEGIN	POINT
+						Type	POINT_LINKTO
+						Name	Center
+						RelativePath	Satellite/STARLINK-1422/Receiver/UPRX10
+					END	POINT
+				LTDRefSystem
+					BEGIN	SYSTEM
+						Type	SYSTEM_LINKTO
+						Name	BarycenterICRF
+						AbsolutePath	CentralBody/Sun
+					END	SYSTEM
+				Apparent	No
+				TimeConvergence	 1.0000000000000000e-03
+				TimeSense	Receive
+				IgnoreAberration	No
+		END	VECTOR
+    END Crdn
+    
+    BEGIN Graphics
+
+		BEGIN Attributes
+
+			Inherit             Yes
+			Show                Yes
+			LineStyle           0
+			LineWidth           1.000000
+			PatternColor        #ff0e0e
+
+		END Attributes
+
+		BEGIN Display
+
+			NumberOfPatterns        1
+			PersistenceDuration     0.000000000000e+00
+			PersistenceIgnoreDefChg No
+			UpdatesDefnOften        No
+			MinDisplayAltitude      0.000000000000e+00
+			MaxDisplayAltitude      1.000000000000e+07
+			AltitudeIntersectSense           Either
+			ShowBothAltCrossings           No
+			IntersectType           CentralBody
+			ShowGround          Yes
+			UseProjectionRadii          No
+			ExcludeHorizonArcs           No
+			ForwardPersist          No
+			FillPersist             No
+			DsplyTmHidesPersist     No
+			SpaceLength             5.000000000000e+07
+			TgtExtLength            0.000000000000e+00
+			FOVHalfAngle            No
+			HalfAngle               0.000000000000e+00
+			ProjDisplay             Sphere
+			DisplayType             ConstantRadius
+			DisplayFOVWithConstraints           No
+			ShowBoresight           No
+			BoresightMarker         4
+			BoresightColor          #ffffff
+			ShowFill                No
+			FillTranslucency        0.500000
+			ShowOn2DMap             Yes
+
+		END Display
+
+		BEGIN    Swath
+
+			MaxStep            6.000000000000e+01
+			MinStep            1.000000000000e-01
+			CloseSwath    Yes
+			Tolerance          4.000000000000e+00
+			MatchTolerance     9.000000000000e+01
+			ShowSwath    No
+			ComputationalMethod    Numerical
+			Color        #f0ffff
+			LineStyle    0
+			LineWidth    1.000000
+    SwathIntervalPtr
+	BEGIN	EVENTINTERVAL
+			BEGIN Interval
+				Start	5 Jan 2022 10:00:00.000000000
+				Stop	6 Jan 2022 10:00:00.000000000
+			END Interval
+			IntervalState	Explicit
+	END	EVENTINTERVAL
+
+
+		END    Swath
+
+        BEGIN DisplayTimes
+            DisplayType	AlwaysOn
+        END DisplayTimes
+    END Graphics
+    
+    BEGIN Swath
+    END Swath
+    
+    BEGIN VO
+    END VO
+    
+    BEGIN DIS
+    END DIS
+
+END Extensions
+
+BEGIN SubObjects
+
+Class Antenna
+
+	SA1
+
+END Class
+
+END SubObjects
+
+END Sensor
+

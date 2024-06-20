@@ -1,0 +1,19 @@
+STK.V.9.0
+WrittenBy    AGI.Framework
+BEGIN Satellite
+	Name		STARLINK-1413_45689
+BEGIN VehiclePath
+	CentralBody				Earth
+	BEGIN SGP4
+		VersionIndicator    20080918
+		SSCNumber           45689
+		IntlDesignator      2020-035AJ
+		CommonName          STARLINK-1413
+		TimeStep    60.0
+	END SGP4
+END VehiclePath
+BEGIN Extensions
+	BEGIN Desc
+	END Desc
+END Extensions
+END Satellite

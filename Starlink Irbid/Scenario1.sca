@@ -1,0 +1,343 @@
+stk.v.11.0
+WrittenBy    STK_v11.2.0
+BEGIN Access 
+        Scenario/Scenario1/Facility/MyHome/Receiver/DLRX
+        Scenario/Scenario1/Satellite/STARLINK-1404/Transmitter/DLTX5
+
+    IsComputed               Yes
+    UpdateOnReference        Yes
+    DupIsDifferent           No
+    UIOrderReversed          No
+    UITimePeriod             Object
+    UseLightTimeDelay        Yes
+    ClockHost                Base
+    TimeSense                Receive
+    AberrationType           Annual
+    TimeDelayConvergence     5.000000e-05
+    MaxTimeStep              3.600000e+02
+    MinTimeStep              1.000000e-02
+    TimeConvergence          5.000000e-03
+    AbsValueConvergence      1.000000e-14
+    RelValueConvergence      1.000000e-08
+    DetectEventsUsingSamplesOnly No
+    Show                     Yes
+    Inherit                  Yes
+    ShowIV                   Yes
+    ShowLineGfx              Yes
+    ShowHiliteGfx            Yes
+    LineWidth                1.000000e+00
+    BEGIN  Crdn
+    END  Crdn
+
+END Access
+
+BEGIN Access 
+        Scenario/Scenario1/Facility/MyHome/Receiver/DLRX
+        Scenario/Scenario1/Satellite/STARLINK-1413/Transmitter/DLTX6
+
+    IsComputed               Yes
+    UpdateOnReference        Yes
+    DupIsDifferent           No
+    UIOrderReversed          No
+    UITimePeriod             Object
+    UseLightTimeDelay        Yes
+    ClockHost                Base
+    TimeSense                Receive
+    AberrationType           Annual
+    TimeDelayConvergence     5.000000e-05
+    MaxTimeStep              3.600000e+02
+    MinTimeStep              1.000000e-02
+    TimeConvergence          5.000000e-03
+    AbsValueConvergence      1.000000e-14
+    RelValueConvergence      1.000000e-08
+    DetectEventsUsingSamplesOnly No
+    Show                     Yes
+    Inherit                  Yes
+    ShowIV                   Yes
+    ShowLineGfx              Yes
+    ShowHiliteGfx            Yes
+    LineWidth                1.000000e+00
+    BEGIN  Crdn
+    END  Crdn
+
+END Access
+
+BEGIN Access 
+        Scenario/Scenario1/Facility/MyHome/Receiver/DLRX
+        Scenario/Scenario1/Satellite/STARLINK-1399/Transmitter/DLTX3
+
+    IsComputed               Yes
+    UpdateOnReference        Yes
+    DupIsDifferent           No
+    UIOrderReversed          No
+    UITimePeriod             Object
+    UseLightTimeDelay        Yes
+    ClockHost                Base
+    TimeSense                Receive
+    AberrationType           Annual
+    TimeDelayConvergence     5.000000e-05
+    MaxTimeStep              3.600000e+02
+    MinTimeStep              1.000000e-02
+    TimeConvergence          5.000000e-03
+    AbsValueConvergence      1.000000e-14
+    RelValueConvergence      1.000000e-08
+    DetectEventsUsingSamplesOnly No
+    Show                     Yes
+    Inherit                  Yes
+    ShowIV                   Yes
+    ShowLineGfx              Yes
+    ShowHiliteGfx            Yes
+    LineWidth                1.000000e+00
+    BEGIN  Crdn
+    END  Crdn
+
+END Access
+
+BEGIN Access 
+        Scenario/Scenario1/Facility/MyHome/Receiver/DLRX
+        Scenario/Scenario1/Satellite/STARLINK-1393/Transmitter/DLTX1
+
+    IsComputed               Yes
+    UpdateOnReference        Yes
+    DupIsDifferent           No
+    UIOrderReversed          No
+    UITimePeriod             Object
+    UseLightTimeDelay        Yes
+    ClockHost                Base
+    TimeSense                Receive
+    AberrationType           Annual
+    TimeDelayConvergence     5.000000e-05
+    MaxTimeStep              3.600000e+02
+    MinTimeStep              1.000000e-02
+    TimeConvergence          5.000000e-03
+    AbsValueConvergence      1.000000e-14
+    RelValueConvergence      1.000000e-08
+    DetectEventsUsingSamplesOnly No
+    Show                     Yes
+    Inherit                  Yes
+    ShowIV                   Yes
+    ShowLineGfx              Yes
+    ShowHiliteGfx            Yes
+    LineWidth                1.000000e+00
+    BEGIN  Crdn
+    END  Crdn
+
+END Access
+
+BEGIN Access 
+        Scenario/Scenario1/Facility/MyHome/Receiver/DLRX
+        Scenario/Scenario1/Satellite/STARLINK-1394/Transmitter/DLTX2
+
+    IsComputed               Yes
+    UpdateOnReference        Yes
+    DupIsDifferent           No
+    UIOrderReversed          No
+    UITimePeriod             Object
+    UseLightTimeDelay        Yes
+    ClockHost                Base
+    TimeSense                Receive
+    AberrationType           Annual
+    TimeDelayConvergence     5.000000e-05
+    MaxTimeStep              3.600000e+02
+    MinTimeStep              1.000000e-02
+    TimeConvergence          5.000000e-03
+    AbsValueConvergence      1.000000e-14
+    RelValueConvergence      1.000000e-08
+    DetectEventsUsingSamplesOnly No
+    Show                     Yes
+    Inherit                  Yes
+    ShowIV                   Yes
+    ShowLineGfx              Yes
+    ShowHiliteGfx            Yes
+    LineWidth                1.000000e+00
+    BEGIN  Crdn
+    END  Crdn
+
+END Access
+
+BEGIN Access 
+        Scenario/Scenario1/Facility/MyHome/Receiver/DLRX
+        Scenario/Scenario1/Satellite/STARLINK-1402/Transmitter/DLTX4
+
+    IsComputed               Yes
+    UpdateOnReference        Yes
+    DupIsDifferent           No
+    UIOrderReversed          No
+    UITimePeriod             Object
+    UseLightTimeDelay        Yes
+    ClockHost                Base
+    TimeSense                Receive
+    AberrationType           Annual
+    TimeDelayConvergence     5.000000e-05
+    MaxTimeStep              3.600000e+02
+    MinTimeStep              1.000000e-02
+    TimeConvergence          5.000000e-03
+    AbsValueConvergence      1.000000e-14
+    RelValueConvergence      1.000000e-08
+    DetectEventsUsingSamplesOnly No
+    Show                     Yes
+    Inherit                  Yes
+    ShowIV                   Yes
+    ShowLineGfx              Yes
+    ShowHiliteGfx            Yes
+    LineWidth                1.000000e+00
+    BEGIN  Crdn
+    END  Crdn
+
+END Access
+
+BEGIN Access 
+        Scenario/Scenario1/Facility/MyHome/Receiver/DLRX
+        Scenario/Scenario1/Satellite/STARLINK-1414/Transmitter/DLTX7
+
+    IsComputed               Yes
+    UpdateOnReference        Yes
+    DupIsDifferent           No
+    UIOrderReversed          No
+    UITimePeriod             Object
+    UseLightTimeDelay        Yes
+    ClockHost                Base
+    TimeSense                Receive
+    AberrationType           Annual
+    TimeDelayConvergence     5.000000e-05
+    MaxTimeStep              3.600000e+02
+    MinTimeStep              1.000000e-02
+    TimeConvergence          5.000000e-03
+    AbsValueConvergence      1.000000e-14
+    RelValueConvergence      1.000000e-08
+    DetectEventsUsingSamplesOnly No
+    Show                     Yes
+    Inherit                  Yes
+    ShowIV                   Yes
+    ShowLineGfx              Yes
+    ShowHiliteGfx            Yes
+    LineWidth                1.000000e+00
+    BEGIN  Crdn
+    END  Crdn
+
+END Access
+
+BEGIN Access 
+        Scenario/Scenario1/Facility/MyHome/Receiver/DLRX
+        Scenario/Scenario1/Satellite/STARLINK-1417/Transmitter/DLTX8
+
+    IsComputed               Yes
+    UpdateOnReference        Yes
+    DupIsDifferent           No
+    UIOrderReversed          No
+    UITimePeriod             Object
+    UseLightTimeDelay        Yes
+    ClockHost                Base
+    TimeSense                Receive
+    AberrationType           Annual
+    TimeDelayConvergence     5.000000e-05
+    MaxTimeStep              3.600000e+02
+    MinTimeStep              1.000000e-02
+    TimeConvergence          5.000000e-03
+    AbsValueConvergence      1.000000e-14
+    RelValueConvergence      1.000000e-08
+    DetectEventsUsingSamplesOnly No
+    Show                     Yes
+    Inherit                  Yes
+    ShowIV                   Yes
+    ShowLineGfx              Yes
+    ShowHiliteGfx            Yes
+    LineWidth                1.000000e+00
+    BEGIN  Crdn
+    END  Crdn
+
+END Access
+
+BEGIN Access 
+        Scenario/Scenario1/Facility/MyHome/Receiver/DLRX
+        Scenario/Scenario1/Satellite/STARLINK-1419/Transmitter/DLTX9
+
+    IsComputed               Yes
+    UpdateOnReference        Yes
+    DupIsDifferent           No
+    UIOrderReversed          No
+    UITimePeriod             Object
+    UseLightTimeDelay        Yes
+    ClockHost                Base
+    TimeSense                Receive
+    AberrationType           Annual
+    TimeDelayConvergence     5.000000e-05
+    MaxTimeStep              3.600000e+02
+    MinTimeStep              1.000000e-02
+    TimeConvergence          5.000000e-03
+    AbsValueConvergence      1.000000e-14
+    RelValueConvergence      1.000000e-08
+    DetectEventsUsingSamplesOnly No
+    Show                     Yes
+    Inherit                  Yes
+    ShowIV                   Yes
+    ShowLineGfx              Yes
+    ShowHiliteGfx            Yes
+    LineWidth                1.000000e+00
+    BEGIN  Crdn
+    END  Crdn
+
+END Access
+
+BEGIN Access 
+        Scenario/Scenario1/Facility/MyHome/Receiver/DLRX
+        Scenario/Scenario1/Satellite/STARLINK-1422/Transmitter/DLTX10
+
+    IsComputed               Yes
+    UpdateOnReference        Yes
+    DupIsDifferent           No
+    UIOrderReversed          No
+    UITimePeriod             Object
+    UseLightTimeDelay        Yes
+    ClockHost                Base
+    TimeSense                Receive
+    AberrationType           Annual
+    TimeDelayConvergence     5.000000e-05
+    MaxTimeStep              3.600000e+02
+    MinTimeStep              1.000000e-02
+    TimeConvergence          5.000000e-03
+    AbsValueConvergence      1.000000e-14
+    RelValueConvergence      1.000000e-08
+    DetectEventsUsingSamplesOnly No
+    Show                     Yes
+    Inherit                  Yes
+    ShowIV                   Yes
+    ShowLineGfx              Yes
+    ShowHiliteGfx            Yes
+    LineWidth                1.000000e+00
+    BEGIN  Crdn
+    END  Crdn
+
+END Access
+
+BEGIN Access 
+        Scenario/Scenario1/Satellite/STARLINK-1393
+        Scenario/Scenario1/Facility/MyHome
+
+    IsComputed               Yes
+    UpdateOnReference        Yes
+    DupIsDifferent           No
+    UIOrderReversed          No
+    UITimePeriod             Object
+    UseLightTimeDelay        Yes
+    ClockHost                Base
+    TimeSense                Transmit
+    AberrationType           Annual
+    TimeDelayConvergence     5.000000e-05
+    MaxTimeStep              3.600000e+02
+    MinTimeStep              1.000000e-02
+    TimeConvergence          5.000000e-03
+    AbsValueConvergence      1.000000e-14
+    RelValueConvergence      1.000000e-08
+    DetectEventsUsingSamplesOnly No
+    Show                     Yes
+    Inherit                  Yes
+    ShowIV                   Yes
+    ShowLineGfx              Yes
+    ShowHiliteGfx            Yes
+    LineWidth                1.000000e+00
+    BEGIN  Crdn
+    END  Crdn
+
+END Access
+

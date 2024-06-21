@@ -31,9 +31,10 @@ To see what actually happens more clearly, please download the simulation files 
 The primary focus of this project is the implementation of a Starlink satellite network to provide internet coverage in Irbid, Jordan. Starlink, developed by SpaceX, aims to deliver high-speed internet across the globe using a constellation of low Earth orbit (LEO) satellites. This part of the project involves designing, simulating, and evaluating the performance of the Starlink network in providing reliable internet access, including performance metrics such as Bit Error Rate (BER), Signal-to-Noise Ratio (SNR), and interference management.
 </p>
 
-<p align="justify">
-For tracking and selecting the Starlink satellites, we utilized the [satellitemap](https://satellitemap.space) website, an invaluable tool that provides real-time positions of Starlink satellites. This tool helped in picking 10 Starlink satellites within the same orbital plane, checking their next passes over Jordan, and evaluating their performance for internet coverage in Irbid.
+<p style="text-align: justify;">
+For tracking and selecting the Starlink satellites, we utilized the invaluable <a href="https://satellitemap.space">satellitemap</a> website, which provides real-time positions of Starlink satellites. This tool helped in picking 10 Starlink satellites within the same orbital plane, checking their next passes over Jordan, and evaluating their performance for internet coverage in Irbid.
 </p>
+
 
 #### Starlink Internet Coverage Simulation
 <div align="center">
@@ -48,8 +49,9 @@ Note the same as in Molniya for rendering the actual video/GIF of the simulation
 
 ## Further Details
 <p align="justify">
-For a comprehensive understanding of the methodologies and findings, please refer to the detailed [report](https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/blob/main/Starlink%20Irbid/Report.pdf) included in this repository. The report was initially created to supplement a comprehensive presentation of the simulation to the course instructor. While it provides an overview of the general methodology, design, and performance, it does not encompass every detail. The primary objective of this report was to meet the formal submission requirements, and it can be easily improved for a more stringent objective.
+For understanding the methodologies and findings, please refer to the <a href="https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/blob/main/Starlink%20Irbid/Report.pdf">report</a> included in this repository. The report was initially created to supplement a comprehensive presentation of the simulation to the course instructor. While it provides an overview of the general methodology, design, and performance, it does not encompass every detail. The primary objective of this report was to meet the formal submission requirements, and it can be easily improved for a more stringent objective.
 </p>
+
 
 ### Repository Contents
 - **Report:** Design, analysis and results.

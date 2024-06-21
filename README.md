@@ -19,7 +19,7 @@ In this project, we simulate the potential use of Molniya orbit satellites for s
 <div align="center">
    <img src="https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/raw/main/See%20America/Molniya%20Simulation.png" alt="Molniya Simulation">
   <p><strong>Low Quality GIF</strong></p>
-  <img src="https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/raw/main/See%20America/GIF.gif" alt="Molniya GIF" width="600">
+  <img src="https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/raw/main/See%20America/GIF.gif" alt="Molniya GIF" width="1200">
 </div>
 
 <p align="justify">
@@ -56,7 +56,7 @@ For tracking and selecting the Starlink satellites, we utilized the invaluable <
 <div align="center">
    <img src="https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/raw/main/Starlink%20Irbid/Starlink%20Simulation.png" alt="Starlink Simulation">
   <p><strong>Low Quality GIF</strong></p>
-  <img src="https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/raw/main/Starlink%20Irbid/GIF.gif" alt="Starlink GIF">
+  <img src="https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/raw/main/Starlink%20Irbid/GIF.gif" alt="Starlink GIF" width="1000">
 </div>
 
 <p align="justify">

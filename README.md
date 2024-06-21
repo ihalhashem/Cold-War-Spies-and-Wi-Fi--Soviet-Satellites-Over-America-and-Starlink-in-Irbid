@@ -26,6 +26,22 @@ In this project, we simulate the potential use of Molniya orbit satellites for s
 To see what actually happens more clearly, please download the simulation files and run them locally. High quality videos/GIFs are too large to be rendered and displayed quickly if at all on GitHub.
 </p>
 
+#### SpySat Coverage of Washington
+
+<p style="text-align: justify;">
+The SpySat sees Washington, D.C. for approximately 16 hours a day. The access summary report and the timeline graph below highlight the specific periods when Washington is within the satellite's view.
+</p>
+
+##### Access Summary Report
+<div align="center">
+   <img src="https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/raw/main/See%20America/access.png" alt="Access Summary Report">
+</div>
+
+##### Access Timeline Graph
+<div align="center">
+   <img src="https://github.com/HashemRawashdeh/Cold-War-Spies-and-Wi-Fi--Soviet-Satellites-Over-America-and-Starlink-in-Irbid/raw/main/See%20America/accessG.png" alt="Access Timeline Graph">
+</div>
+
 ### Starlink Internet Coverage in Irbid
 <p align="justify">
 The primary focus of this project is the implementation of a Starlink satellite network to provide internet coverage in Irbid, Jordan. Starlink, developed by SpaceX, aims to deliver high-speed internet across the globe using a constellation of low Earth orbit (LEO) satellites. This part of the project involves designing, simulating, and evaluating the performance of the Starlink network in providing reliable internet access, including performance metrics such as Bit Error Rate (BER), Signal-to-Noise Ratio (SNR), and interference management.
